@@ -1,0 +1,345 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: unset;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: unset;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: sfpro_regular;
+  src: url(../fonts/SFProDisplay-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: sfpro_medium;
+  src: url(../fonts/SFProDisplay-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: Merriweather;
+  src: url(../fonts/Merriweather-Light.woff) format("woff");
+}
+@font-face {
+  font-family: BoschSerif-Regular;
+  src: url(../fonts/BoschSerif-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: BoschSerif-Bold;
+  src: url(../fonts/BoschSerif-Bold.woff) format("woff");
+}
+
+body {
+  margin: 0;
+  font-family: sfpro_regular;
+}
+
+section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+h2.section__title {
+  font-size: 40px;
+  font-family: "Bosch-Regular";
+  color: rgb(164, 172, 168);
+  line-height: 1.268;
+  text-align: center;
+}
+
+p.subtitle {
+  font-size: 16px;
+  color: rgb(164, 172, 168);
+  line-height: 1.438;
+  margin: 0;
+}
+
+h3.mini__title {
+  font-size: 23px;
+  font-family: "Bosch-Regular";
+  color: rgb(97, 110, 104);
+  line-height: 1.261;
+}
+
+.logo {
+  position: relative;
+  font-size: 20px;
+  font-family: Merriweather;
+  color: rgb(66, 76, 71);
+  text-transform: uppercase;
+  line-height: 1.2;
+  background-color: rgb(249, 254, 252);
+  padding: 22px 20px 20px 22px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.logo img {
+  margin-left: -13px;
+}
+
+.logo span {
+  position: relative;
+  bottom: 41px;
+  left: -11px;
+}
+
+.logo__button {
+  height: 25px;
+  position: absolute;
+  width: 95%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: #f9f9f9;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1300px;
+}
+
+header {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container > * {
+  margin-top: 14px;
+}
+
+header .container .logo {
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 17px;
+  font-size: 14px;
+  font-family: sfpro_regular;
+  color: rgba(103, 111, 107, 0.949);
+  line-height: 1.714;
+}
+
+nav li a {
+  color: inherit;
+}
+
+.callme__button button {
+  font-family: inherit;
+  border: 1px dashed #c0c2c0;
+  padding-right: 11px;
+  padding-left: 38px;
+  border-radius: 4px;
+  background: url(../img/phone.png) no-repeat center left 11px;
+}
+
+.callme__button p {
+  border-left: 1px dashed #c0c2c0;
+  margin: 0;
+  padding: 15px 0 15px 11px;
+  font-size: 12px;
+  color: rgb(103, 111, 107);
+  text-transform: uppercase;
+}
+
+.header__contacts a {
+  font-size: 20px;
+  font-family: sfpro_medium;
+  color: rgb(86, 93, 90);
+  line-height: 1.2;
+}
+
+.header__contacts p {
+  font-size: 14px;
+  color: rgb(127, 137, 132);
+  line-height: 1.714;
+  margin: 0;
+  text-align: right;
+}
+
+section.banner {
+  background: url(../img/girl2.jpg);
+  padding-top: 88px;
+  padding-bottom: 0;
+  height: 740px;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "Bosch-Regular";
+  color: rgb(85, 96, 91);
+  line-height: 1.25;
+  padding-top: 118px;
+}
+
+.h1__li ul {
+  display: flex;
+  list-style: none;
+}
+
+.h1__li li {
+  padding: 0 20px 0 26px;
+  background: url(../img/icons.png) no-repeat top 3px left;
+  font-family: sfpro_regular;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  line-height: 1.438;
+}
+
+button.main__button {
+  background-image: url(../img/button_musk1.png);
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(131, 198, 162);
+  box-shadow: 0px 8px 21px 0px rgba(122, 216, 172, 0.34);
+  width: 259px;
+  padding: 22px 0 31px;
+  background-repeat: no-repeat;
+  letter-spacing: 2px;
+}
+
+.main__about {
+  width: 322px;
+  position: relative;
+  max-width: 100%;
+  margin: 27px auto 0;
+  right: 160px;
+}
+
+.main__about:after {
+  content: "";
+  display: block;
+  width: 305px;
+  height: 40px;
+  margin: auto;
+  background-color: rgb(251, 251, 251);
+  border-radius: 8px;
+  opacity: 0.4;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.main__box {
+  position: relative;
+  display: flex;
+  padding: 24px 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: rgb(251, 251, 251);
+  height: 98px;
+  z-index: 2;
+}
+
+.about__num {
+  font-size: 55px;
+  color: rgb(66, 221, 149);
+  line-height: 0, 545;
+  padding-right: 21px;
+}
+
+.about__text {
+  font-size: 14px;
+  color: rgb(164, 172, 168);
+  line-height: 1.286;
+}
+
+section.avantage {
+  padding-top: 70px;
+}
+
+.avantage__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.avanage__box {
+  position: relative;
+  background-color: rgb(243, 243, 243);
+  width: 435px;
+  max-width: 100%;
+  padding-top: 100px;
+  margin-bottom: 19px;
+  margin-right: 19px;
+}
+
+.avanage__box img {
+  position: absolute;
+  top: -20px;
+  right: 0px;
+}
+
+.avanage__box.profesionals {
+  width: 370px;
+  height: 97%;
+  padding-left: 190px;
+  background: url(../img/profesionals1.png);
+}
+
+.avanage__box.profesionals h3,
+.avanage__box.profesionals p {
+  color: #fff;
+  padding-bottom: 33px;
+}
+
+.avanage__box.services {
+  padding-left: 189px;
+  padding-bottom: 70px;
+  background: url(../img/marketing\ \(1\).png);
+}
+
+.avanage__box.standarts,
+.avanage__box.cars {
+  height: 328px;
+}
+
+.avanage__box.gifts {
+  padding: 75px 0 103px 217px;
+  background: url(../img/camera\ \(1\).png);
+}
+
+.avanage__box.cars {
+  padding-left: 53px;
+	padding-bottom: 10px;
+  background: url(../img/russia.png);
+}
+
+.avanage__box.standarts {
+	background: url(../img/pen\ \(1\).png) no-repeat top 5px right;
+}
